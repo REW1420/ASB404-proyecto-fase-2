@@ -1,0 +1,11 @@
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\Login.exe.config
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\Login.exe
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\Login.pdb
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Login.csproj.AssemblyReference.cache
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Login.Login.resources
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Login.Properties.Resources.resources
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Login.csproj.GenerateResource.cache
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Login.exe
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Login.pdb
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Login.FormLogin.resources

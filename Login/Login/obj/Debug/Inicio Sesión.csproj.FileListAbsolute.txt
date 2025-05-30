@@ -1,0 +1,23 @@
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\Login.exe.config
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\Login.exe
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\Login.pdb
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Inicio Sesión.csproj.AssemblyReference.cache
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Login.FormIniSesión.resources
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Login.Properties.Resources.resources
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Inicio Sesión.csproj.GenerateResource.cache
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Inicio Sesión.csproj.CoreCompileInputs.cache
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Login.exe
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Login.pdb
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\InicioEmpleados.exe
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\Registro Transacciones.exe
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\Control Préstamos.exe
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\RegistroClientes.exe
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\InicioEmpleados.pdb
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\InicioEmpleados.exe.config
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\Registro Transacciones.pdb
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\Registro Transacciones.exe.config
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\Control Préstamos.pdb
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\Control Préstamos.exe.config
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\RegistroClientes.pdb
+D:\ASB404\ProCa Fase 1\Login\Login\bin\Debug\RegistroClientes.exe.config
+D:\ASB404\ProCa Fase 1\Login\Login\obj\Debug\Inicio S.51055F30.Up2Date

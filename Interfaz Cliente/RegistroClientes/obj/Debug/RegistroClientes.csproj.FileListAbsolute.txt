@@ -1,0 +1,24 @@
+D:\ASB404\ProCa Fase 1\RegistroClientes\bin\Debug\RegistroClientes.exe.config
+D:\ASB404\ProCa Fase 1\RegistroClientes\bin\Debug\RegistroClientes.exe
+D:\ASB404\ProCa Fase 1\RegistroClientes\bin\Debug\RegistroClientes.pdb
+D:\ASB404\ProCa Fase 1\RegistroClientes\obj\Debug\RegistroClientes.csproj.AssemblyReference.cache
+D:\ASB404\ProCa Fase 1\RegistroClientes\obj\Debug\RegistroClientes.DatosFinales.resources
+D:\ASB404\ProCa Fase 1\RegistroClientes\obj\Debug\RegistroClientes.Dirección.resources
+D:\ASB404\ProCa Fase 1\RegistroClientes\obj\Debug\RegistroClientes.Datos.resources
+D:\ASB404\ProCa Fase 1\RegistroClientes\obj\Debug\RegistroClientes.Properties.Resources.resources
+D:\ASB404\ProCa Fase 1\RegistroClientes\obj\Debug\RegistroClientes.csproj.GenerateResource.cache
+D:\ASB404\ProCa Fase 1\RegistroClientes\obj\Debug\RegistroClientes.csproj.CoreCompileInputs.cache
+D:\ASB404\ProCa Fase 1\RegistroClientes\obj\Debug\RegistroClientes.exe
+D:\ASB404\ProCa Fase 1\RegistroClientes\obj\Debug\RegistroClientes.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\RegistroClientes\bin\Debug\RegistroClientes.exe.config
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\RegistroClientes\bin\Debug\RegistroClientes.exe
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\RegistroClientes\bin\Debug\RegistroClientes.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\RegistroClientes\obj\Debug\RegistroClientes.csproj.AssemblyReference.cache
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\RegistroClientes\obj\Debug\RegistroClientes.DatosFCli.resources
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\RegistroClientes\obj\Debug\RegistroClientes.DirecCli.resources
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\RegistroClientes\obj\Debug\RegistroClientes.DatosCli.resources
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\RegistroClientes\obj\Debug\RegistroClientes.Properties.Resources.resources
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\RegistroClientes\obj\Debug\RegistroClientes.csproj.GenerateResource.cache
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\RegistroClientes\obj\Debug\RegistroClientes.csproj.CoreCompileInputs.cache
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\RegistroClientes\obj\Debug\RegistroClientes.exe
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\RegistroClientes\obj\Debug\RegistroClientes.pdb

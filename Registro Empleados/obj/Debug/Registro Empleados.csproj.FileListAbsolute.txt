@@ -1,0 +1,11 @@
+D:\ASB404\ProCa Fase 1\Registro Empleados\bin\Debug\Registro Empleados.exe.config
+D:\ASB404\ProCa Fase 1\Registro Empleados\bin\Debug\Registro Empleados.exe
+D:\ASB404\ProCa Fase 1\Registro Empleados\bin\Debug\Registro Empleados.pdb
+D:\ASB404\ProCa Fase 1\Registro Empleados\obj\Debug\Registro Empleados.csproj.AssemblyReference.cache
+D:\ASB404\ProCa Fase 1\Registro Empleados\obj\Debug\Registro_Empleados.Paso1Emp.resources
+D:\ASB404\ProCa Fase 1\Registro Empleados\obj\Debug\Registro_Empleados.Properties.Resources.resources
+D:\ASB404\ProCa Fase 1\Registro Empleados\obj\Debug\Registro Empleados.csproj.GenerateResource.cache
+D:\ASB404\ProCa Fase 1\Registro Empleados\obj\Debug\Registro Empleados.csproj.CoreCompileInputs.cache
+D:\ASB404\ProCa Fase 1\Registro Empleados\obj\Debug\Registro Empleados.exe
+D:\ASB404\ProCa Fase 1\Registro Empleados\obj\Debug\Registro Empleados.pdb
+D:\ASB404\ProCa Fase 1\Registro Empleados\obj\Debug\Registro_Empleados.DirecEmp.resources

@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASB404\\ProCa Fase 1\\RegistroClientes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2897278B-26C4-4C45-859B-E998E67C5209}|RegistroClientes.csproj|d:\\asb404\\proca fase 1\\registroclientes\\datosfinales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2897278B-26C4-4C45-859B-E998E67C5209}|RegistroClientes.csproj|solutionrelative:datosfinales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2897278B-26C4-4C45-859B-E998E67C5209}|RegistroClientes.csproj|D:\\ASB404\\ProCa Fase 1\\RegistroClientes\\direcci\u00F3n.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2897278B-26C4-4C45-859B-E998E67C5209}|RegistroClientes.csproj|solutionrelative:direcci\u00F3n.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2897278B-26C4-4C45-859B-E998E67C5209}|RegistroClientes.csproj|D:\\ASB404\\ProCa Fase 1\\RegistroClientes\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2897278B-26C4-4C45-859B-E998E67C5209}|RegistroClientes.csproj|solutionrelative:datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatosFinales.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\RegistroClientes\\DatosFinales.cs",
+              "RelativeDocumentMoniker": "DatosFinales.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\RegistroClientes\\DatosFinales.cs [Dise\u00F1o]",
+              "RelativeToolTip": "DatosFinales.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T19:58:56.698Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Datos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\RegistroClientes\\Datos.cs",
+              "RelativeDocumentMoniker": "Datos.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\RegistroClientes\\Datos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Datos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T19:41:15.745Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Direcci\u00F3n.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\RegistroClientes\\Direcci\u00F3n.cs",
+              "RelativeDocumentMoniker": "Direcci\u00F3n.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\RegistroClientes\\Direcci\u00F3n.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Direcci\u00F3n.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T19:53:25.814Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F890F1-E7A1-4064-95EE-476C16C407E0}|InicioAdmin.csproj|d:\\asb404\\proca fase 1\\interfaz administrador\\inicioadmin\\loginadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0F890F1-E7A1-4064-95EE-476C16C407E0}|InicioAdmin.csproj|solutionrelative:loginadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F890F1-E7A1-4064-95EE-476C16C407E0}|InicioAdmin.csproj|D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\iniadmi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0F890F1-E7A1-4064-95EE-476C16C407E0}|InicioAdmin.csproj|solutionrelative:iniadmi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F890F1-E7A1-4064-95EE-476C16C407E0}|InicioAdmin.csproj|d:\\asb404\\proca fase 1\\interfaz administrador\\inicioadmin\\loginadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F890F1-E7A1-4064-95EE-476C16C407E0}|InicioAdmin.csproj|solutionrelative:loginadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B32CE875-25B9-4A3E-9034-3A145F635774}|..\\..\\Registro Empleados\\Registro Empleados.csproj|d:\\asb404\\proca fase 1\\registro empleados\\direcemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B32CE875-25B9-4A3E-9034-3A145F635774}|..\\..\\Registro Empleados\\Registro Empleados.csproj|d:\\asb404\\proca fase 1\\registro empleados\\datosemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F890F1-E7A1-4064-95EE-476C16C407E0}|InicioAdmin.csproj|D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\veremp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0F890F1-E7A1-4064-95EE-476C16C407E0}|InicioAdmin.csproj|solutionrelative:veremp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F890F1-E7A1-4064-95EE-476C16C407E0}|InicioAdmin.csproj|D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\histtransacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0F890F1-E7A1-4064-95EE-476C16C407E0}|InicioAdmin.csproj|solutionrelative:histtransacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginAdmin.cs",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\LoginAdmin.cs",
+              "RelativeDocumentMoniker": "LoginAdmin.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\LoginAdmin.cs",
+              "RelativeToolTip": "LoginAdmin.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAApwBcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T22:23:58.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginAdmin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\LoginAdmin.cs",
+              "RelativeDocumentMoniker": "LoginAdmin.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\LoginAdmin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "LoginAdmin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T19:22:49.812Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DirecEmp.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Registro Empleados\\DirecEmp.cs",
+              "RelativeDocumentMoniker": "..\\..\\Registro Empleados\\DirecEmp.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Registro Empleados\\DirecEmp.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Registro Empleados\\DirecEmp.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T01:41:57.224Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatosEmp.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Registro Empleados\\DatosEmp.cs",
+              "RelativeDocumentMoniker": "..\\..\\Registro Empleados\\DatosEmp.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Registro Empleados\\DatosEmp.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Registro Empleados\\DatosEmp.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T01:40:19.121Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VerEmp.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\VerEmp.cs",
+              "RelativeDocumentMoniker": "VerEmp.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\VerEmp.cs [Dise\u00F1o]",
+              "RelativeToolTip": "VerEmp.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T22:49:52.686Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IniAdmi.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\IniAdmi.cs",
+              "RelativeDocumentMoniker": "IniAdmi.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\IniAdmi.cs [Dise\u00F1o]",
+              "RelativeToolTip": "IniAdmi.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T22:32:20.274Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HistTransacts.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\HistTransacts.cs",
+              "RelativeDocumentMoniker": "HistTransacts.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Interfaz Administrador\\InicioAdmin\\HistTransacts.cs [Dise\u00F1o]",
+              "RelativeToolTip": "HistTransacts.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T22:43:30.976Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

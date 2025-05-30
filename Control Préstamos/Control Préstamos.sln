@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Control Préstamos", "Control Préstamos.csproj", "{E83137CB-DDB4-4B82-870C-E9F6FF2C0920}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E83137CB-DDB4-4B82-870C-E9F6FF2C0920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E83137CB-DDB4-4B82-870C-E9F6FF2C0920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E83137CB-DDB4-4B82-870C-E9F6FF2C0920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E83137CB-DDB4-4B82-870C-E9F6FF2C0920}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08083BCD-27DF-4B5C-BF25-E95A5F92E623}
+	EndGlobalSection
+EndGlobal

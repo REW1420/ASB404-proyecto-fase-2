@@ -1,0 +1,10 @@
+D:\ASB404\ProCa Fase 1\Control Préstamos\bin\Debug\Control Préstamos.exe.config
+D:\ASB404\ProCa Fase 1\Control Préstamos\bin\Debug\Control Préstamos.exe
+D:\ASB404\ProCa Fase 1\Control Préstamos\bin\Debug\Control Préstamos.pdb
+D:\ASB404\ProCa Fase 1\Control Préstamos\obj\Debug\Control Préstamos.csproj.AssemblyReference.cache
+D:\ASB404\ProCa Fase 1\Control Préstamos\obj\Debug\Control_Préstamos.Préstamos.resources
+D:\ASB404\ProCa Fase 1\Control Préstamos\obj\Debug\Control_Préstamos.Properties.Resources.resources
+D:\ASB404\ProCa Fase 1\Control Préstamos\obj\Debug\Control Préstamos.csproj.GenerateResource.cache
+D:\ASB404\ProCa Fase 1\Control Préstamos\obj\Debug\Control Préstamos.csproj.CoreCompileInputs.cache
+D:\ASB404\ProCa Fase 1\Control Préstamos\obj\Debug\Control Préstamos.exe
+D:\ASB404\ProCa Fase 1\Control Préstamos\obj\Debug\Control Préstamos.pdb

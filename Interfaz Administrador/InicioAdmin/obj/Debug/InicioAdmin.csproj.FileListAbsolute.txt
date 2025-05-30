@@ -1,0 +1,18 @@
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\bin\Debug\InicioAdmin.exe.config
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\bin\Debug\InicioAdmin.exe
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\bin\Debug\InicioAdmin.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\bin\Debug\Registro Empleados.exe
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\bin\Debug\Registro Empleados.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\bin\Debug\Registro Empleados.exe.config
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\obj\Debug\InicioAdmin.csproj.AssemblyReference.cache
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\obj\Debug\InicioAdmin.HistTransacts.resources
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\obj\Debug\InicioAdmin.Properties.Resources.resources
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\obj\Debug\InicioAdmin.VerClientes.resources
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\obj\Debug\InicioAdmin.VerEmp.resources
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\obj\Debug\InicioAdmin.csproj.GenerateResource.cache
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\obj\Debug\InicioAdmin.csproj.CoreCompileInputs.cache
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\obj\Debug\InicioAd.31692CC8.Up2Date
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\obj\Debug\InicioAdmin.exe
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\obj\Debug\InicioAdmin.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\obj\Debug\InicioAdmin.IniAdmi.resources
+D:\ASB404\ProCa Fase 1\Interfaz Administrador\InicioAdmin\obj\Debug\InicioAdmin.LoginAdmin.resources

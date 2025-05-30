@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1B51B9B-D21B-4BA7-BACC-0FA701EE399C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>InicioEmpleados</RootNamespace>
+    <AssemblyName>InicioEmpleados</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IniEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniEmp.Designer.cs">
+      <DependentUpon>IniEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginEmp.Designer.cs">
+      <DependentUpon>LoginEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VerClnts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerClnts.Designer.cs">
+      <DependentUpon>VerClnts.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="IniEmp.resx">
+      <DependentUpon>IniEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginEmp.resx">
+      <DependentUpon>LoginEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VerClnts.resx">
+      <DependentUpon>VerClnts.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Control Préstamos\Control Préstamos.csproj">
+      <Project>{e83137cb-ddb4-4b82-870c-e9f6ff2c0920}</Project>
+      <Name>Control Préstamos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Interfaz Cliente\RegistroClientes\RegistroClientes.csproj">
+      <Project>{2897278b-26c4-4c45-859b-e998e67c5209}</Project>
+      <Name>RegistroClientes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Registro Transacciones\Registro Transacciones.csproj">
+      <Project>{7d278559-bb7c-4e4f-955d-20e6e732c805}</Project>
+      <Name>Registro Transacciones</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

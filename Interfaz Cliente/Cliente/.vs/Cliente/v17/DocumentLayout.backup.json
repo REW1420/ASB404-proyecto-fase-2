@@ -1,0 +1,142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\Cliente\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9812CF80-4D00-4697-8680-6C9BA3C936F5}|Cliente.csproj|d:\\asb404\\proca fase 1\\interfaz cliente\\cliente\\logincli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9812CF80-4D00-4697-8680-6C9BA3C936F5}|Cliente.csproj|solutionrelative:logincli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D278559-BB7C-4E4F-955D-20E6E732C805}|..\\..\\Registro Transacciones\\Registro Transacciones.csproj|d:\\asb404\\proca fase 1\\registro transacciones\\transacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9812CF80-4D00-4697-8680-6C9BA3C936F5}|Cliente.csproj|D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\Cliente\\iniciocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9812CF80-4D00-4697-8680-6C9BA3C936F5}|Cliente.csproj|solutionrelative:iniciocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9812CF80-4D00-4697-8680-6C9BA3C936F5}|Cliente.csproj|D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\Cliente\\histtransacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9812CF80-4D00-4697-8680-6C9BA3C936F5}|Cliente.csproj|solutionrelative:histtransacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2897278B-26C4-4C45-859B-E998E67C5209}|..\\RegistroClientes\\RegistroClientes.csproj|d:\\asb404\\proca fase 1\\interfaz cliente\\registroclientes\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2897278B-26C4-4C45-859B-E998E67C5209}|..\\RegistroClientes\\RegistroClientes.csproj|d:\\asb404\\proca fase 1\\interfaz cliente\\registroclientes\\direcci\u00F3n.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2897278B-26C4-4C45-859B-E998E67C5209}|..\\RegistroClientes\\RegistroClientes.csproj|d:\\asb404\\proca fase 1\\interfaz cliente\\registroclientes\\datosfinales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9812CF80-4D00-4697-8680-6C9BA3C936F5}|Cliente.csproj|D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\Cliente\\logincli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9812CF80-4D00-4697-8680-6C9BA3C936F5}|Cliente.csproj|solutionrelative:logincli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Transacts.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Registro Transacciones\\Transacts.cs",
+              "RelativeDocumentMoniker": "..\\..\\Registro Transacciones\\Transacts.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Registro Transacciones\\Transacts.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Registro Transacciones\\Transacts.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T23:13:40.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InicioCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\Cliente\\InicioCliente.cs",
+              "RelativeDocumentMoniker": "InicioCliente.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\Cliente\\InicioCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "InicioCliente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T23:12:53.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HistTransacciones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\Cliente\\HistTransacciones.cs",
+              "RelativeDocumentMoniker": "HistTransacciones.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\Cliente\\HistTransacciones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "HistTransacciones.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T23:12:46.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginCli.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\Cliente\\LoginCli.cs",
+              "RelativeDocumentMoniker": "LoginCli.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\Cliente\\LoginCli.cs [Dise\u00F1o]",
+              "RelativeToolTip": "LoginCli.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T22:19:08.384Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DatosFinales.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\RegistroClientes\\DatosFinales.cs",
+              "RelativeDocumentMoniker": "..\\RegistroClientes\\DatosFinales.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\RegistroClientes\\DatosFinales.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\RegistroClientes\\DatosFinales.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T22:05:17.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Direcci\u00F3n.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\RegistroClientes\\Direcci\u00F3n.cs",
+              "RelativeDocumentMoniker": "..\\RegistroClientes\\Direcci\u00F3n.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\RegistroClientes\\Direcci\u00F3n.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\RegistroClientes\\Direcci\u00F3n.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T21:38:52.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Datos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\RegistroClientes\\Datos.cs",
+              "RelativeDocumentMoniker": "..\\RegistroClientes\\Datos.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\RegistroClientes\\Datos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\RegistroClientes\\Datos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T21:05:52.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginCli.cs",
+              "DocumentMoniker": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\Cliente\\LoginCli.cs",
+              "RelativeDocumentMoniker": "LoginCli.cs",
+              "ToolTip": "D:\\ASB404\\ProCa Fase 1\\Interfaz Cliente\\Cliente\\LoginCli.cs",
+              "RelativeToolTip": "LoginCli.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:27:34.095Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

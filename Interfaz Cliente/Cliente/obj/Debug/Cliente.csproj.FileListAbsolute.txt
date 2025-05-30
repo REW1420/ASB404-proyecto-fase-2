@@ -1,0 +1,22 @@
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\obj\Debug\Cliente.csproj.AssemblyReference.cache
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\obj\Debug\Cliente.Inicio.resources
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\obj\Debug\Cliente.Properties.Resources.resources
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\obj\Debug\Cliente.csproj.GenerateResource.cache
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\obj\Debug\Cliente.csproj.CoreCompileInputs.cache
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\bin\Debug\Cliente.exe.config
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\bin\Debug\Cliente.exe
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\bin\Debug\Cliente.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\bin\Debug\Control Préstamos.exe
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\bin\Debug\Registro Transacciones.exe
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\bin\Debug\RegistroClientes.exe
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\bin\Debug\Control Préstamos.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\bin\Debug\Control Préstamos.exe.config
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\bin\Debug\Registro Transacciones.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\bin\Debug\Registro Transacciones.exe.config
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\bin\Debug\RegistroClientes.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\bin\Debug\RegistroClientes.exe.config
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\obj\Debug\Cliente.csproj.Up2Date
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\obj\Debug\Cliente.exe
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\obj\Debug\Cliente.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\obj\Debug\Cliente.Historial.resources
+D:\ASB404\ProCa Fase 1\Interfaz Cliente\Cliente\obj\Debug\Cliente.LoginCli.resources

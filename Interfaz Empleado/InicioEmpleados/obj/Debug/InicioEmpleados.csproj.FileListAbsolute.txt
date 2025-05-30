@@ -1,0 +1,22 @@
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\bin\Debug\InicioEmpleados.exe.config
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\bin\Debug\InicioEmpleados.exe
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\bin\Debug\InicioEmpleados.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\bin\Debug\Control Préstamos.exe
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\bin\Debug\Registro Transacciones.exe
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\bin\Debug\RegistroClientes.exe
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\bin\Debug\Control Préstamos.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\bin\Debug\Control Préstamos.exe.config
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\bin\Debug\RegistroClientes.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\bin\Debug\RegistroClientes.exe.config
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\bin\Debug\Registro Transacciones.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\bin\Debug\Registro Transacciones.exe.config
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\obj\Debug\InicioEmpleados.csproj.AssemblyReference.cache
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\obj\Debug\InicioEmpleados.IniEmp.resources
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\obj\Debug\InicioEmpleados.Properties.Resources.resources
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\obj\Debug\InicioEmpleados.VerClnts.resources
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\obj\Debug\InicioEmpleados.csproj.GenerateResource.cache
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\obj\Debug\InicioEmpleados.csproj.CoreCompileInputs.cache
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\obj\Debug\InicioEm.A12C0D57.Up2Date
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\obj\Debug\InicioEmpleados.exe
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\obj\Debug\InicioEmpleados.pdb
+D:\ASB404\ProCa Fase 1\Interfaz Empleado\InicioEmpleados\obj\Debug\InicioEmpleados.LoginEmp.resources
