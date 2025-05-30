@@ -1,0 +1,507 @@
+-- Creación de la base de datos
+CREATE DATABASE IF NOT EXISTS `fonavit`;
+USE `fonavit`;
+
+-- Tabla user
+CREATE TABLE `user` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(255) DEFAULT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  `birthdate` date DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tabla client
+CREATE TABLE `client` (
+  `client_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `family_status` varchar(255) DEFAULT NULL,
+  `beneficiary` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`client_id`),
+  KEY `fk_client_user` (`user_id`),
+  CONSTRAINT `fk_client_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tabla position
+CREATE TABLE `position` (
+  `position_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`position_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tabla employee
+CREATE TABLE `employee` (
+  `employee_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `position_id` int(11) DEFAULT NULL,
+  `immediate_boss` int(11) DEFAULT NULL,
+  `salary` double DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  KEY `fk_employee_user` (`user_id`),
+  KEY `fk_employee_boss` (`immediate_boss`),
+  CONSTRAINT `fk_employee_boss` FOREIGN KEY (`immediate_boss`) REFERENCES `employee` (`employee_id`),
+  CONSTRAINT `fk_employee_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tabla account_type
+CREATE TABLE `account_type` (
+  `account_type_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`account_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tabla account
+CREATE TABLE `account` (
+  `account_id` int(11) NOT NULL AUTO_INCREMENT,
+  `client_id` int(11) DEFAULT NULL,
+  `account_type_id` int(11) DEFAULT NULL,
+  `balance` double DEFAULT NULL,
+  PRIMARY KEY (`account_id`),
+  KEY `fk_account_client` (`client_id`),
+  KEY `fk_account_type` (`account_type_id`),
+  CONSTRAINT `fk_account_client` FOREIGN KEY (`client_id`) REFERENCES `client` (`client_id`),
+  CONSTRAINT `fk_account_type` FOREIGN KEY (`account_type_id`) REFERENCES `account_type` (`account_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tabla transaction_type
+CREATE TABLE `transaction_type` (
+  `transaction_type_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`transaction_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tabla bank_transaction
+CREATE TABLE `bank_transaction` (
+  `transaction_id` int(11) NOT NULL AUTO_INCREMENT,
+  `client_id` int(11) DEFAULT NULL,
+  `employee_id` int(11) DEFAULT NULL,
+  `transaction_amount` double DEFAULT NULL,
+  `transaction_date` date DEFAULT NULL,
+  `account_id` int(11) DEFAULT NULL,
+  `transaction_type_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`transaction_id`),
+  KEY `fk_transaction_client` (`client_id`),
+  KEY `fk_transaction_employee` (`employee_id`),
+  KEY `fk_transaction_account` (`account_id`),
+  KEY `fk_transaction_type` (`transaction_type_id`),
+  CONSTRAINT `fk_transaction_account` FOREIGN KEY (`account_id`) REFERENCES `account` (`account_id`),
+  CONSTRAINT `fk_transaction_client` FOREIGN KEY (`client_id`) REFERENCES `client` (`client_id`),
+  CONSTRAINT `fk_transaction_employee` FOREIGN KEY (`employee_id`) REFERENCES `employee` (`employee_id`),
+  CONSTRAINT `fk_transaction_type` FOREIGN KEY (`transaction_type_id`) REFERENCES `transaction_type` (`transaction_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tabla loan_status
+CREATE TABLE `loan_status` (
+  `loan_status_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`loan_status_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tabla loan_application
+CREATE TABLE `loan_application` (
+  `loan_application_id` int(11) NOT NULL AUTO_INCREMENT,
+  `client_id` int(11) DEFAULT NULL,
+  `employee_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`loan_application_id`),
+  KEY `fk_loan_application_client` (`client_id`),
+  KEY `fk_loan_application_employee` (`employee_id`),
+  CONSTRAINT `fk_loan_application_client` FOREIGN KEY (`client_id`) REFERENCES `client` (`client_id`),
+  CONSTRAINT `fk_loan_application_employee` FOREIGN KEY (`employee_id`) REFERENCES `employee` (`employee_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tabla loan
+CREATE TABLE `loan` (
+  `loan_id` int(11) NOT NULL AUTO_INCREMENT,
+  `loan_application_id` int(11) DEFAULT NULL,
+  `loan_status_id` int(11) DEFAULT NULL,
+  `disbursement_date` date DEFAULT NULL,
+  `interest` double DEFAULT NULL,
+  `loan_value` double DEFAULT NULL,
+  `payment_time` int(11) DEFAULT NULL,
+  PRIMARY KEY (`loan_id`),
+  KEY `fk_loan_application` (`loan_application_id`),
+  KEY `fk_loan_status` (`loan_status_id`),
+  CONSTRAINT `fk_loan_application` FOREIGN KEY (`loan_application_id`) REFERENCES `loan_application` (`loan_application_id`),
+  CONSTRAINT `fk_loan_status` FOREIGN KEY (`loan_status_id`) REFERENCES `loan_status` (`loan_status_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tabla loan_record
+CREATE TABLE `loan_record` (
+  `loan_record_id` int(11) NOT NULL AUTO_INCREMENT,
+  `transaction_id` int(11) DEFAULT NULL,
+  `loan_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`loan_record_id`),
+  KEY `fk_loan_record_transaction` (`transaction_id`),
+  KEY `fk_loan_record_loan` (`loan_id`),
+  CONSTRAINT `fk_loan_record_loan` FOREIGN KEY (`loan_id`) REFERENCES `loan` (`loan_id`),
+  CONSTRAINT `fk_loan_record_transaction` FOREIGN KEY (`transaction_id`) REFERENCES `bank_transaction` (`transaction_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tabla auditoria
+CREATE TABLE `auditoria` (
+  `idauditoria` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `idempleado` int(11) DEFAULT NULL,
+  `nombreempleado` varchar(50) DEFAULT NULL,
+  `tablamodificada` varchar(50) DEFAULT NULL,
+  `fechamodificacion` date DEFAULT NULL,
+  PRIMARY KEY (`idauditoria`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Vista transacciones_diarias
+CREATE VIEW `transacciones_diarias` AS
+SELECT 
+  `bt`.`transaction_id` AS `Id de transacción realizada`, 
+  `a`.`account_id` AS `Número de cuenta`, 
+  `u`.`user_id` AS `Documento de identidad`, 
+  concat(`u`.`first_name`,' ',`u`.`last_name`) AS `Nombre del dueño de la cuenta`, 
+  concat(`eu`.`first_name`,' ',`eu`.`last_name`) AS `Nombre del usuario que realizó la transacción`, 
+  concat(`boss`.`first_name`,' ',`boss`.`last_name`) AS `Nombre del jefe inmediato`, 
+  abs(`bt`.`transaction_amount`) AS `Monto de la transacción`, 
+  CASE WHEN `tt`.`name` = 'Depósito' OR `tt`.`name` = 'Abono' THEN 'ABONO' ELSE 'RETIRO' END AS `Tipo de transacción`, 
+  CASE WHEN `l`.`loan_id` is not null AND `ls`.`name` not in ('Rechazado','Pagado','Cancelado') THEN 'SI' ELSE 'NO' END AS `Préstamo activo` 
+FROM 
+  (((((((((((`bank_transaction` `bt` 
+  JOIN `account` `a` ON (`bt`.`account_id` = `a`.`account_id`)) 
+  JOIN `client` `c` ON (`a`.`client_id` = `c`.`client_id`)) 
+  JOIN `user` `u` ON (`c`.`user_id` = `u`.`user_id`)) 
+  JOIN `employee` `e` ON (`bt`.`employee_id` = `e`.`employee_id`)) 
+  JOIN `user` `eu` ON (`e`.`user_id` = `eu`.`user_id`)) 
+  LEFT JOIN `employee` `boss_emp` ON (`e`.`immediate_boss` = `boss_emp`.`employee_id`)) 
+  LEFT JOIN `user` `boss` ON (`boss_emp`.`user_id` = `boss`.`user_id`)) 
+  JOIN `transaction_type` `tt` ON (`bt`.`transaction_type_id` = `tt`.`transaction_type_id`)) 
+  LEFT JOIN `loan_record` `lr` ON (`bt`.`transaction_id` = `lr`.`transaction_id`)) 
+  LEFT JOIN `loan` `l` ON (`lr`.`loan_id` = `l`.`loan_id`)) 
+  LEFT JOIN `loan_status` `ls` ON (`l`.`loan_status_id` = `ls`.`loan_status_id`)) 
+WHERE 
+  CAST(`bt`.`transaction_date` AS DATE) = CURDATE();
+
+-- Procedimiento almacenado actualizar_transacciones_diarias
+DELIMITER $$
+CREATE PROCEDURE `actualizar_transacciones_diarias`()
+BEGIN
+    -- Ejecuta una consulta sobre la vista para forzar su actualización visual
+    SELECT * FROM transacciones_diarias;
+END$$
+DELIMITER ;
+
+-- Triggers para la tabla account
+DELIMITER $$
+CREATE TRIGGER `trg_account_delete` AFTER DELETE ON `account` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'account', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_account_insert` AFTER INSERT ON `account` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'account', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_account_update` AFTER UPDATE ON `account` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'account', CURDATE());
+END$$
+DELIMITER ;
+
+-- Triggers para la tabla account_type
+DELIMITER $$
+CREATE TRIGGER `trg_account_type_delete` AFTER DELETE ON `account_type` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'account_type', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_account_type_insert` AFTER INSERT ON `account_type` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'account_type', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_account_type_update` AFTER UPDATE ON `account_type` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'account_type', CURDATE());
+END$$
+DELIMITER ;
+
+-- Triggers para la tabla bank_transaction
+DELIMITER $$
+CREATE TRIGGER `trg_bank_transaction_delete` AFTER DELETE ON `bank_transaction` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'bank_transaction', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_bank_transaction_insert` AFTER INSERT ON `bank_transaction` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'bank_transaction', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_bank_transaction_update` AFTER UPDATE ON `bank_transaction` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'bank_transaction', CURDATE());
+END$$
+DELIMITER ;
+
+-- Triggers para la tabla client
+DELIMITER $$
+CREATE TRIGGER `trg_client_delete` AFTER DELETE ON `client` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'client', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_client_insert` AFTER INSERT ON `client` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'client', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_client_update` AFTER UPDATE ON `client` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'client', CURDATE());
+END$$
+DELIMITER ;
+
+-- Triggers para la tabla employee
+DELIMITER $$
+CREATE TRIGGER `trg_employee_delete` AFTER DELETE ON `employee` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'employee', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_employee_insert` AFTER INSERT ON `employee` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'employee', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_employee_update` AFTER UPDATE ON `employee` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'employee', CURDATE());
+END$$
+DELIMITER ;
+
+-- Triggers para la tabla loan
+DELIMITER $$
+CREATE TRIGGER `trg_loan_delete` AFTER DELETE ON `loan` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'loan', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_loan_insert` AFTER INSERT ON `loan` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'loan', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_loan_update` AFTER UPDATE ON `loan` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'loan', CURDATE());
+END$$
+DELIMITER ;
+
+-- Triggers para la tabla loan_application
+DELIMITER $$
+CREATE TRIGGER `trg_loan_application_delete` AFTER DELETE ON `loan_application` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'loan_application', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_loan_application_insert` AFTER INSERT ON `loan_application` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'loan_application', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_loan_application_update` AFTER UPDATE ON `loan_application` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'loan_application', CURDATE());
+END$$
+DELIMITER ;
+
+-- Triggers para la tabla loan_record
+DELIMITER $$
+CREATE TRIGGER `trg_loan_record_delete` AFTER DELETE ON `loan_record` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'loan_record', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_loan_record_insert` AFTER INSERT ON `loan_record` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'loan_record', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_loan_record_update` AFTER UPDATE ON `loan_record` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'loan_record', CURDATE());
+END$$
+DELIMITER ;
+
+-- Triggers para la tabla loan_status
+DELIMITER $$
+CREATE TRIGGER `trg_loan_status_delete` AFTER DELETE ON `loan_status` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'loan_status', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_loan_status_insert` AFTER INSERT ON `loan_status` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'loan_status', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_loan_status_update` AFTER UPDATE ON `loan_status` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'loan_status', CURDATE());
+END$$
+DELIMITER ;
+
+-- Triggers para la tabla position
+DELIMITER $$
+CREATE TRIGGER `trg_position_delete` AFTER DELETE ON `position` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'position', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_position_insert` AFTER INSERT ON `position` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'position', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_position_update` AFTER UPDATE ON `position` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'position', CURDATE());
+END$$
+DELIMITER ;
+
+-- Triggers para la tabla transaction_type
+DELIMITER $$
+CREATE TRIGGER `trg_transaction_type_delete` AFTER DELETE ON `transaction_type` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'transaction_type', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_transaction_type_insert` AFTER INSERT ON `transaction_type` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'transaction_type', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_transaction_type_update` AFTER UPDATE ON `transaction_type` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'transaction_type', CURDATE());
+END$$
+DELIMITER ;
+
+-- Triggers para la tabla user
+DELIMITER $$
+CREATE TRIGGER `trg_user_delete` AFTER DELETE ON `user` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'user', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_user_insert` AFTER INSERT ON `user` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'user', CURDATE());
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `trg_user_update` AFTER UPDATE ON `user` FOR EACH ROW 
+BEGIN
+    INSERT INTO auditoria (idempleado, nombreempleado, tablamodificada, fechamodificacion)
+    VALUES (1, 'Sistema', 'user', CURDATE());
+END$$
+DELIMITER ;
+
+-- Crear usuario 'administrador' con todos los privilegios
+CREATE USER 'administrador'@'%' IDENTIFIED BY 'AdminPassword123!';
+GRANT SELECT, INSERT, UPDATE, DELETE ON fonavit.* TO 'administrador'@'%';
+GRANT CREATE USER ON *.* TO 'administrador'@'%';
+GRANT ALL PRIVILEGES ON fonavit.* TO 'administrador'@'%' WITH GRANT OPTION;
+
+-- Crear usuario 'sistema' con permisos SELECT e INSERT
+CREATE USER 'sistema'@'%' IDENTIFIED BY 'SistemaPassword123!';
+GRANT SELECT, INSERT ON fonavit.* TO 'sistema'@'%';
+
+-- Crear usuario 'webservice' con permisos SELECT en vistas
+CREATE USER 'webservice'@'%' IDENTIFIED BY 'WebservicePassword123!';
+GRANT SELECT ON fonavit.transacciones_diarias TO 'webservice'@'%';
+
+-- Aplicar los cambios de privilegios
+FLUSH PRIVILEGES;
